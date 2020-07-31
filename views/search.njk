@@ -1,0 +1,43 @@
+{%extends 'layout.njk'%}
+
+{%block content%}
+
+<section class="create">
+    <header>
+        <img src="/assets/logo.svg" alt="logo">
+        <a href="/"><span></span>Voltar para home</a>
+    </header>
+
+    <div class="search-points">
+
+    {%if total > 0 %}
+        
+        <p><strong>{{total}} pontos </strong>encontrados</p>
+
+        <div class="cards">
+            {%for place in places%}
+            <div class="card">
+                <img src="{{place.image}}" alt="{{place.name}}">
+                <h2>{{place.name}}</h2>
+                <h3>{{place.items}}</h3>
+                <p>
+                    {{place.city}}, {{place.state}} <br/>
+                    {{place.address}}  <br/>
+                    {{place.address2}}        
+                </p>
+            </div>
+            {%endfor%}            
+        </div>
+
+
+    </div>
+
+    {%else%}
+    <h4><strong>Nenhum</strong> local encontrado</h4>
+
+    {%endif%}
+
+</section>
+
+
+{%endblock%}

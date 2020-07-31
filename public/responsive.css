@@ -1,0 +1,96 @@
+@media(max-width:900px){
+
+    header{
+        position: initial;
+    }
+
+    header .header-capa a{
+        left: 48px;
+        position: absolute;
+        bottom: 0;
+        
+    }
+
+    .capa{
+        text-align: center;
+        display: block;
+        width: 80%;
+        margin: 0 auto;
+        align-items: center;
+    }
+
+    .capa-bg{
+        background: none;
+        height: 0;
+    }
+
+    .search-icon {
+        text-align: left;
+    }
+
+    
+
+    .capa-content {
+        display: inline-block;
+        width: 100%;
+        margin:0 auto;
+    }
+    .capa-content span{
+        text-align: center;
+        padding: 20px;
+        width: 20%;
+    }
+
+    .capa-content button{
+        text-align: left;
+        width: 90%;
+        
+    }
+
+    /*cadastro de pontos*/
+    .create form{
+        padding: 40px;
+    }
+
+    .create form .field-group{
+        flex-direction: column;
+        margin: 20px auto;
+    }
+
+    .create .field-group .field + .field{
+        margin-left: 0;
+    }
+
+    .create-form .field-group .field{
+        display:grid;
+        grid-template-columns: 1fr;
+        width: 80%;
+    }
+
+    .items-grid{
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 16px;
+    }
+
+    .create form button{
+        margin: 20px auto;
+    }
+
+    .create form legend{
+        display: block;
+        text-align: center;
+    }
+
+    /*search*/
+    .search-points .cards{
+        grid-template-columns: 1fr;
+
+    }
+
+    .search-points .card{
+        margin: 40px 0;
+    }
+    
+}

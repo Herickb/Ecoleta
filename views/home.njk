@@ -1,0 +1,40 @@
+{%extends 'layout.njk'%}
+
+{%block content%}
+    
+    <header>
+        <div class="header-capa">
+        <img src="/assets/logo.svg" alt="Logomarca">
+        <a href="/create"><span></span>Cadastre um ponto de coleta</a>
+        </div>
+    </header>
+    
+    <div class="capa">
+        <div class="capa-content">
+        <h2>Seu marketplace de coleta de resíduos</h2>
+        <p>Ajudamos pessoas a encontrarem pontos de coleta de forma eficiente</p>
+        <button href="#" class="search-icon"><span></span><p>Pesquisar pontos de coleta</p></button>
+        </div>
+        <div class="capa-bg"></div>
+    </div>
+
+    <div class="modal hide">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h1>Pontos de coleta</h1>
+                <a href="#"class="close-modal">Fechar</a>
+            </div>
+            <form action="search">
+                <label for="search"></label>
+                <div class="search field">
+                    <input type="text" name="search" placeholder="Pesquise por cidade" required>
+                    <button class="search-modal">
+                        <img src="/assets/search.svg" alt="Buscar">
+                    </button>
+                </div>
+            </form>
+        </div>
+    </div>
+   
+    <script src="home.js"></script>
+{%endblock%}
