@@ -1,0 +1,1 @@
+Projeto desenvolvido para cadastrar e pesquisar pontos de coletas por cidade
